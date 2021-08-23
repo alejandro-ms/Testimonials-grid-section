@@ -27,8 +27,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://www.frontendmentor.io/profile/alejandro-ms/solutions)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Solutions](https://www.frontendmentor.io/profile/alejandro-ms/solutions)
+- Live Site URL: [Testimonials - grid section](https://alejandro-ms.github.io/Testimonials-grid-section/)
 
 ## My process
 
@@ -43,11 +43,10 @@ Users should be able to:
 ### What I learned
 I learned more about CSS Grid and Flexbox.
 
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
 
 ## Author
 
-- Linkedin - [Alejandro Miranda Solís](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](www.linkedin.com/in/alejandro-miranda-solís-0a195019a)
+- Linkedin - [Alejandro Miranda Solís](www.linkedin.com/in/alejandro-miranda-solís-0a195019a)
+- Frontend Mentor - [@alejandro-ms](https://www.frontendmentor.io/profile/alejandro-ms)
 
 
