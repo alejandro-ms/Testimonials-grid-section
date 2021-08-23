@@ -1,0 +1,243 @@
+
+:root {
+    --color-violet: hsl(263, 55%, 52%);
+    --color-darkgray: hsl(217, 19%, 35%);
+    --color-darkblack: hsl(219, 29%, 14%);
+    --color-white: hsl(0, 0%, 100%);
+}
+
+body {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    background-color: hsl(210, 46%, 95%);
+}
+
+.container-flex {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+}
+
+.container-grid {
+    display: grid;
+    height: 75vh;
+    width: 75vw;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 1.5em;
+    color: var(--color-white);
+}
+
+.section-purple {
+    grid-column: 1 / 4;
+    grid-row: 1 / 3; 
+    background-color: var(--color-violet);
+    border-radius: 0.5em;
+    overflow: hidden;
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    padding: 1em;
+}
+
+.section-gray {
+    grid-column: 4 / 5;
+    grid-row: 1 / 3;
+    background-color: var(--color-darkgray);
+    border-radius: 0.5em;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: .5em;
+}
+
+.section-white-large {
+    grid-column: 5 / 6;
+    grid-row: 1 / 5;
+    background-color: var(--color-white);
+    border-radius: 0.5em;
+    overflow: hidden;
+    color: var(--color-darkblack);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 0.8em;
+}
+
+.section-white {
+    grid-column: 1 / 2;
+    grid-row: 3 / 5;
+    background-color: var(--color-white);
+    border-radius: 0.5em;
+    color: var(--color-darkblack);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 1em;
+}
+
+.section-black {
+    grid-column: 2 / 5;
+    grid-row: 3 / 5;
+    background-color: var(--color-darkblack);
+    border-radius: 0.5em;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 1em;
+}
+
+.figure {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 1em;
+}
+
+.section-white .figure {
+    height: 100%;
+}
+
+.img{
+    height: 2em;
+    border-radius: 1em;
+}
+
+.img--purple {
+    --color-violet: hsl(263, 93%, 72%);
+    border: 1.4px var(--color-violet) solid;
+}
+
+.img--purple-strong {
+    --color-violet: hsl(263, 44%, 47%);
+    border: 1.4px var(--color-violet) solid;
+}
+
+.section-person {
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.text-opacity50 {
+    font-weight: 500;
+    font-size: 1rem;
+    opacity: 50%;
+}
+
+.section-title {
+    font-weight: 600;
+    font-size: 1.2rem;
+    z-index: 1;
+}
+
+.background-string::after {
+    position: absolute;
+    margin-top: 1em;
+    margin-right: 5em;
+    top: 0;
+    right: 0;
+    z-index: 0;
+    content: url(../images/bg-pattern-quotation.svg);
+}
+
+.section-p {
+    opacity: 50%;
+    font-size: 0.7rem;
+    line-height: 1.4em;
+    width: 80%;
+}
+
+@media (max-width: 1300px) {
+    .container-grid {
+        width: 95vw;
+        height: 95vh;
+    }
+}
+
+@media (max-width: 800px) {
+    
+    .container-flex {
+        display: flex;
+        margin-top: 3em;
+        height: 320vh;
+        width: 100vw;
+     }
+
+    .container-grid {
+        display: grid;
+        height: 320vh;
+        width: 85vw;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(24, 1fr);
+        gap: 1.5em;
+        color: var(--color-white);
+    }
+
+    .section-purple {
+        grid-column: 1 / 1;
+        grid-row: 1 / 7; 
+    }
+
+    .section-gray {
+        grid-column: 1 / 1;
+        grid-row: 7 / 10;
+    }
+    
+    .section-white-large {
+        grid-column: 1 / 1;
+        grid-row: 18 / 24;
+    }
+
+    .section-white {
+        grid-column: 1 / 1;
+        grid-row: 10 / 13;
+    }
+    
+    .section-black {
+        grid-column: 1 / 1;
+        grid-row: 13 / 18;
+        justify-content: space-around;
+    }
+
+    .section-title {
+      font-size: 1.5rem;
+    }
+
+    .section-p {
+        font-size: 1rem;
+        width: 90%;
+    }
+    .background-string::after {
+        position: absolute;
+        margin-top: 3em;
+        margin-right: 1em;
+        content: url(../images/bg-pattern-quotation.svg);
+    }
+}
+
+@media (max-width: 400px) and (max-height: 800px) {
+  
+    .container-flex {
+        display: flex;
+        margin-top: 3em;
+        height: 500vh;
+        width: 100vw;
+     }
+
+    .container-grid {
+        display: grid;
+        height: 500vh;
+        width: 85vw;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(24, 1fr);
+        gap: 1.5em;
+        color: var(--color-white);
+    }
+
+    
+}
